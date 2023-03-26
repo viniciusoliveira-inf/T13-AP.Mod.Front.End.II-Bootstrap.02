@@ -1,0 +1,48 @@
+#menu-capitulos {
+    height: 40px;
+}
+
+/* Exercicio 1 */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+
+.botaoCentro {
+    width: 300px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+/* Exercicio 2 */
+.accordion {
+    padding: 30px 0 30px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoLocalStarage {
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+/* Exercicio 3 */
+.divAlet {
+    width: 500px;
+}
+
+.botaoAlert {
+    width: 400px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    font-size: 30px;
+}

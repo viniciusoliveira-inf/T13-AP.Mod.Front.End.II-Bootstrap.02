@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- PROGRAMAÇÃO FRONT-END II -->
+    <!-- Atividade Prática - Bootstrap 02 -->
+    <title>AP02 - Exercício 3</title>
+</head>
+
+<body>
+    <!-- Navegação pelos exercícios -->
+    <div class="container-fluid bg-secondary" id="menu-capitulos">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a class="nav-link text-white" href="exercicio01.html">Exercicio 1</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="exercicio02.html">Exercicio 2</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="exercicio03.html">EXERCICIO 3</a></li>
+        </ul>
+    </div>
+    <!-- Corpo do exercício 01 -->
+    <div class="container-fluid">
+        <form class="form">
+            <!-- Alert -->
+            <div id="divAlert" class="alert animated wow fadeInRight" data-wow-delay="1s"></div>
+            <!-- Button -->
+            <button type="button" class="btn btn-warning botaoAlert" data-bs-toggle="modal"
+                data-bs-target="#modalEstatico">CLICK AQUI</button>
+            <!-- Modal -->
+            <div class="modal fade" id="modalEstatico" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar exclusão dos dados?</h1>
+                            <button type="button" id="buttonFechar" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close" onclick="clicouFechar()"></button>
+                        </div>
+                        <div class="modal-body">Ao apagar os dados, os mesmos serão excluídos do sistema.</div>
+                        <div class="modal-footer">
+                            <button type="button" id="buttonSim" class="btn btn-primary" data-bs-dismiss="modal"
+                                onclick="clicouSim()">Sim</button>
+                            <button type="button" id="buttonNao" class="btn btn-danger" data-bs-dismiss="modal"
+                                onclick="clicouNao()">Não</button>
+                            <button type="button" id="buttonCancelar" class="btn btn-secondary" data-bs-dismiss="modal"
+                                onclick="clicouCancelar()">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/exercicio03.js"></script>
+</body>
+
+</html>
